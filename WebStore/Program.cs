@@ -31,14 +31,14 @@ namespace WebStore
             await Assigments.Task06_Top3UsersByOrderValue();
 
             await Assigments.Task07_RecentOrders();
-/*
+
             await Assigments.Task08_TotalSoldPerProduct();
 
             await Assigments.Task09_DiscountedOrders();
 
             await Assigments.Task10_AdvancedQueryExample();
             
-            */
+
             Console.WriteLine();
             Console.WriteLine("Press any key to exit...");
             Console.Read();
