@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using WebStore.Assignments;
 //using WebStore.Entities;
+using WebStore.Models;
 
 namespace WebStore
 {
@@ -10,9 +11,9 @@ namespace WebStore
         static async Task Main(string[] args)
         {
 
-            /* TODO: Uncomment this code after generating the entity models
+             //TODO: Uncomment this code after generating the entity models
 
-            using var context = new WebStoreContext();
+            using var context = new OurCompanyDbContext();
 
 
             var Assigments = new LinqQueriesAssignment(context);
@@ -27,19 +28,20 @@ namespace WebStore
 
             await Assigments.Task05_OrderCountPerCustomer();
 
-            await Assigments.Task06_Top3CustomersByOrderValue();
+            await Assigments.Task06_Top3UsersByOrderValue();
 
             await Assigments.Task07_RecentOrders();
-
+/*
             await Assigments.Task08_TotalSoldPerProduct();
 
             await Assigments.Task09_DiscountedOrders();
 
             await Assigments.Task10_AdvancedQueryExample();
+            
             */
-
+            Console.WriteLine();
             Console.WriteLine("Press any key to exit...");
-            Console.ReadKey();
+            Console.Read();
         }
     }
 }
